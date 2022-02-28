@@ -20,4 +20,15 @@ public class PlayerController : MonoBehaviour
 
         rigidBody.AddForce(new Vector3(h_axis, 0.0f, v_axis) * velocity);
     }
+
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other.tag);
+
+        if (other.gameObject.CompareTag("Collectables"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
 }
+
