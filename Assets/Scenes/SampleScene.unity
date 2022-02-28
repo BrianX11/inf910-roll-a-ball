@@ -248,8 +248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a631e5de8ce054cbc0b3435ab2ae92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidad: 10
-  rigidBody: {fileID: 0}
+  velocity: 10
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,8 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b51c7f9b32facc42bbc10841ea64085, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jugador: {fileID: 698581207}
-  offset: {x: 0, y: 0, z: 0}
+  player: {fileID: 0}
 --- !u!1 &1529852484
 GameObject:
   m_ObjectHideFlags: 0
