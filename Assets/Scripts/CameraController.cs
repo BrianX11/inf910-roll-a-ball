@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class CamaraController : MonoBehaviour
 {
-    public GameObject jugador;
+    public GameObject player;
     private Vector3 offset;
     void Start()
     {
-        offset = transform.position - jugador.transform.position;
+        offset = transform.position - player.transform.position;
     }
 
     void LateUpdate()
     {
-        transform.position = jugador.transform.position + offset;
+        transform.position = player.transform.position + offset;
     }
 }

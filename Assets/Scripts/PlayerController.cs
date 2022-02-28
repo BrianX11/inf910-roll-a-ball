@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class JugadorController : MonoBehaviour
 {
-    public float velocidad;
+    public float velocity;
 
     private Rigidbody rigidBody;
 
@@ -15,11 +15,9 @@ public class JugadorController : MonoBehaviour
 
     void FixedUpdate()
     {
-        float movimientoH = Input.GetAxis("Horizontal");
-        float movimientoV = Input.GetAxis("Vertical");
+        float h_axis = Input.GetAxis("Horizontal");
+        float v_axis = Input.GetAxis("Vertical");
 
-        Vector3 movimiento = new Vector3(movimientoH, 0.0f, movimientoV);
-
-        rigidBody.AddForce(movimiento * velocidad);
+        rigidBody.AddForce(new Vector3(h_axis, 0.0f, v_axis) * velocity);
     }
 }
